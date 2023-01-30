@@ -22,8 +22,8 @@ section{
   position: absolute;
   top: 0;
   left: 0;
-  /* border: 2px solid white; */
-  /* background-color: rgba(255, 255, 255, 0.356); */
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.356);
   height: 30px;
   width: 30px;
   border-radius: 50px;
@@ -45,7 +45,7 @@ section{
   background-color: rgb(255, 255, 255);
 }
 .cursor.click::before{
-  animation: click 1s ease  forwards;
+  animation: click 1s ease forwards;
   background-color: rgb(255, 255, 255);
 }
 @keyframes click{

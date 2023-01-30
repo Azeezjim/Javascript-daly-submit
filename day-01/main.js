@@ -1,13 +1,25 @@
-const cursor = document.querySelector('cursor');
+const cursor = document.querySelector('.cursor');
 
-window.addEventListener("mousemove", e => {
-  cursor.style.left = e.pageX + "px";
-  cursor.style.top = e.pageX + "px";
-  cursor.setAttribute('data-fromTop', ((cursor.offsetTop - scrollY)))
+window.addEventListener('mousemove', (e) => {
+  cursor.style.left = e.pageX + 'px';
+  cursor.style.top = e.pageY + 'px';
+  cursor.setAttribute('data-fromTop', (cursor.offsetTop - scrollY));
+  // console.log(e)
+});
+window.addEventListener('scroll', () => {
+  const fromTop = cursor.getAttribute('data-fromTop');
+  cursor.style.top = scrollY + parseInt(fromTop) + 'px';
+  console.log(scrollY);
 });
 
-window.addEventListener("mousemove", e => {
-  const fromTop = cursor.getAttribute('data-fromTop')
-  cursor.style.riight = scrollX + "px";
-  cursor.style.top = scrollY + "px";
- })
+window,addEventListener("click", () => {
+  if(cursor.classList.contains('click')) {
+  cursor.classList.remove('click');
+  void cursor.offsetWith;
+  cursor.classList.add(click);
+
+  }
+  else {
+    cursor.classList.add('click')
+  }
+})
