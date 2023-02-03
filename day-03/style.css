@@ -37,7 +37,7 @@ section{
   display: flex;
   flex-direction: column
 }
-.container p{
+.container .joke{
   font-size: 2rem;
   font-weight: 300;
   line-height: 3rem;
